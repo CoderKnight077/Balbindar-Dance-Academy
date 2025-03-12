@@ -1,0 +1,368 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #222, #111);
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: black;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hamburger-menu.active {
+    display: block;
+}
+
+.hamburger-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hamburger-menu ul li {
+    margin-bottom: 10px;
+}
+
+.hamburger-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Join Us Form */
+.join-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.join-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.join-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    background: #ff5733;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .join-container {
+        width: 95%;
+    }
+}
+
+
+/*  About us code starts from here  */
+
+
+
+.about-us {
+  padding: 60px 40px;
+  background-color: #fff;
+}
+
+.about-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+
+#about-us {
+  background-color: white;
+  padding: 50px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #111;
+  border-top: 1px solid #ccc;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-columns {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.column h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #111;
+}
+
+.about-center {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-center h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.about-center p {
+  margin: 6px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.download-buttons img {
+  height: 45px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.about-footer {
+  border-top: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 14px;
+  text-align: left;
+  gap: 20px;
+}
+
+.about-footer div {
+  flex: 1;
+  min-width: 220px;
+}
+/* Class Schedule Section */
+.class-schedule-section {
+  background-color: #fdf1ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.class-schedule-section .section-title {
+  font-size: 2.2rem;
+  color: #4a148c;
+  margin-bottom: 30px;
+  font-family: 'Georgia', serif;
+  text-shadow: 1px 1px #ccc;
+}
+
+.schedule-table {
+  overflow-x: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.schedule-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  min-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ccc;
+  padding: 16px;
+  vertical-align: top;
+  font-size: 16px;
+  text-align: left;
+}
+
+.schedule-table th {
+  background-color: #d1b2e0;
+  color: #4a148c;
+  font-size: 18px;
+  text-align: center;
+}
+
+.schedule-table td {
+  background-color: #f3d6f5;
+  color: #333;
+}
+
+.schedule-table td strong {
+  display: block;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.schedule-table td span {
+  display: block;
+  font-size: 14px;
+  margin-top: 4px;
+  color: #555;
+}
+
+/* Swipe Hint */
+.swipe-hint {
+  font-size: 14px;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+  display: none;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .class-schedule-section {
+    padding: 40px 15px;
+  }
+
+  .class-schedule-section .section-title {
+    font-size: 1.8rem;
+  }
+
+  .schedule-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .schedule-table table {
+    min-width: 600px;
+  }
+
+  .swipe-hint {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .class-schedule-section .section-title {
+    font-size: 1.6rem;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .schedule-table td strong {
+    font-size: 14px;
+  }
+
+  .schedule-table td span {
+    font-size: 12px;
+  }
+}

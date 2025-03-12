@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Studio Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="Balbindar.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">B<sub>x</sub>   STUDIO</div>
+        <nav>
+            <ul>
+                <li><a href="StepsByBx.html">Step By B<sub>x</sub></a></li>
+
+                <li><a href="AboutUs.html">About Us  </a></li>
+                <li><a href="#"> Gallery  </a></li>
+                 <li><a href="ClassSchedule.html"> Class Schedule   </a></li> 
+                 <li><a href="JoinUs.html"> Join Us </a></li>
+
+            </ul>
+        </nav>
+        <div class="user-options">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"/>
+                </svg> 
+                My Account
+            </a>
+            <!-- <a href="#">English</a> -->
+        </div>
+        
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger">☰</div>
+        <div class="hamburger-menu">
+            <ul>
+                <li><a href="#">Step By B<sub>x</sub></a></li>
+
+                <li><a href="AboutUs.html">About Us   </a></li>
+                <li><a href="#">Gallery  </a></li>
+             <li><a href="ClassSchedule.html"> Class schedule   </a></li> 
+                <li><a href="JoinUs.html">Join Us         </a></li>
+            </ul>
+        </div>
+    </header>
+
+ 
+
+   <!-- Video -->
+<!-- Video Background -->
+<!-- Video Container -->
+<div class="video-container">
+    <video id="danceVideo" autoplay loop>
+        <source src="dance-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+
+<!-- Sound Toggle Button -->
+<div id="soundToggle">
+    <i id="soundIcon" class="fa-solid fa-volume-up"></i> <!-- Default: Sound ON icon -->
+</div>
+
+
+    <div class="booking">
+        <a href="#" id="open-booking">BOOKING</a>
+    </div>
+
+    <!-- Booking Form -->
+    <div class="booking-form" id="booking-form">
+        <h2>Book Your Dance Class</h2>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <button id="submit-booking">Submit</button>
+        <button id="close-booking">Close</button>
+    </div>
+    <br>
+ <br>
+
+ <br>
+
+<!-- Content Appearing After Everything Else -->
+<div class="content-below">
+    <div class="additional-section">
+        <h2>Extra Content Section</h2>
+        <p>This section will always appear below everything — even below video, booking button, etc.</p>
+
+        <h2> why it is not appearing anywhere </h2>
+    </div>
+</div>
+
+  
+
+
+    
+ 
+</body>
+
+
+
+
+<script src="Balbindar.js"></script>
+
+<script src="sound.js"></script>
+</html>
